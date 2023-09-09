@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#elemento_titulo{
+    color: black;
+    font-size: 10px;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgba(27, 115, 230, 0.987);
+}
+
+button:hover{
+    background-color: rgb(25, 76, 193);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.color-acento{ color:rgb(45, 27, 209); }
+
+header{
+    z-index: 2;
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    position: initial;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgba(27, 115, 230, 0.987);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #2427ee, #3586FF, #225BA7, #1E75E6);
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #2442ee, #3586FF, #225BA7, #1E75E6);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
