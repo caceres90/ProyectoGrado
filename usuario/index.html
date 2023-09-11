@@ -8,9 +8,13 @@
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- Mi CSS -->
+	<link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+  crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<link href="css/style.css" rel="stylesheet">
-	<title>ADMINISTRACION</title>
+	<title>Usuario</title>
 </head>
 
 <body>
@@ -18,10 +22,9 @@
 
 	<!--Panel-->
 	<section id="sidebar">
-		<a href="#" class="brand">
-			<i class='bx bxs-smile'></i>
-		</a>
-		<ul class="side-menu top">
+		<br>
+		<br>
+		<ul class="side-menu top mt-5">
 			<li class="active">
 				<a href="index.html">
 					<i class='bx bxs-dashboard'></i>
@@ -34,36 +37,14 @@
 					<span class="text">Mi tienda</span>
 				</a>
 			</li>
-	
-			<li >
+			<li>
 				<a href="perfilusuario.html">
 					<i class='bx bxs-group'></i>
 					<span class="text">Perfil de Usuarios</span>
 				</a>
 			</li>
-	
 			<li>
-				<a href="analisis.html">
-					<i class='bx bxs-doughnut-chart'></i>
-					<span class="text">Analisis</span>
-				</a>
-			</li>
-			<li>
-				<a href="cuenta.html">
-					<i class='bx bxs-group'></i>
-					<span class="text">Cuenta</span>
-				</a>
-			</li>
-		</ul>
-		<ul class="side-menu">
-			<li>
-				<a href="ajustes.html">
-					<i class='bx bxs-cog'></i>
-					<span class="text">Ajustes</span>
-				</a>
-			</li>
-			<li>
-				<a href="salir.html" class="logout">
+				<a href="../index.html" class="logout">
 					<i class='bx bxs-log-out-circle'></i>
 					<span class="text">Cerrar sesion</span>
 				</a>
@@ -97,183 +78,53 @@
 			<main>
 				<div class="head-title">
 					<div class="left">
-						<h1>Panel</h1>
-						<ul class="breadcrumb">
-							<li>
-								<a href="#">Panel</a>
-							</li>
-							<li><i class='bx bx-chevron-right'></i></li>
-							<li>
-								<a class="active" href="#">Home</a>
-							</li>
-						</ul>
+						<h1>Usuario</h1>
 					</div>
 				</div>
-				
 
-				<ul class="box-info">
-					<li>
-						<i class='bx bxs-calendar-check'></i>
-						<span class="text">
-							<h3>6</h3>
-							<p>Nueva Orden</p>
-						</span>
-					</li>
-					<li>
-						<i class='bx bxs-group'></i>
-						<span class="text">
-							<h3>1034</h3>
-							<p>Visitantes</p>
-						</span>
-					</li>
-					<li>
-						<i class='bx bxs-dollar-circle'></i>
-						<span class="text">
-							<h3>$243</h3>
-							<p>Ventas Totales</p>
-						</span>
-					</li>
-				</ul>
-
-
-
-							<section>
-								<div class="container">
-									<div class="card">
-										<div class="content">
-											<div class="contentBx">
-												<h3>TECLADO GAMER<br><span>PRODUCTO NUEVO</span></h3>
-											</div>
-											<div class="imgBx">
-												<img src="img/productos/teclado.jpg">
-											</div>
-											<div class="contentBx">
-												<h3>Alexgamer<br><span>103903029</span></h3>
-											</div>
-										</div>
-										<ul class="sci">
-											<li>
-												<a href="">ACEPTAR</a>
-											</li>
-											<li>
-												<a href="">RECHAZAR</a>
-											</li>
-										</ul>
+				<div class="container mx-auto">
+					<div class="row">
+						<div class="col text-center">
+							<div>
+								<img class="w-25 rounded-circle" src="../lib/img/eres dinamita nena.jpeg.jpg">
+							</div>
+							<h5 class="my-4">Eres dinamita nena</h5>
+							<center>
+								<input class="btn btn-secondary btn-block my-3 w-25" onclick="showform()" type="button" value="Editar perfil">
+							</center>
+								<div id="Formulario" class="border-0 card p-4 mx-auto" style="display: none; background-color: #EEEEEE; height: 580px;" class="modal-content">
+								<form name="FormField" id="FormField">
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Correo electronico</label>
+										<input type="email" class="form-control" id="email1" placeholder="name@example.com">
 									</div>
-									<div class="card">
-										<div class="content">
-											<div class="contentBx">
-												<h3>MOUSE GAMER<br><span>PRODUCTO NUEVO</span></h3>
-											</div>
-											<div class="imgBx">
-												<img src="img/productos/mouse.jpg">
-											</div>
-											<div class="contentBx">
-												<h3>Pedro86<br><span>638364783</span></h3>
-											</div>
-										</div>
-										<ul class="sci">
-											<li>
-												<a href="">ACEPTAR</a>
-											</li>
-											<li>
-												<a href="">RECHAZAR</a>
-											</li>
-										</ul>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Nombre de usuario</label>
+										<input type="text" class="form-control" id="username1" placeholder="Username">
 									</div>
-									<div class="card">
-										<div class="content">
-											<div class="contentBx">
-												<h3>CPU GAMER<br><span>PRODUCTO USADO</span></h3>
-											</div>
-											<div class="imgBx">
-												<img src="img/productos/cpu.jpg">
-											</div>
-											<div class="contentBx">
-												<h3>Cano2023<br><span>748948829</span></h3>
-											</div>
-										</div>
-										<ul class="sci">
-											<li>
-												<a href="">ACEPTAR</a>
-											</li>
-											<li>
-												<a href="">RECHAZAR</a>
-											</li>
-										</ul>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Contraseña</label>
+										<input type="password" class="form-control" id="password1" placeholder="Password">
 									</div>
-								</div>
+									<div class="form-group">
+										<label for="exampleFormControlInput1">Confirmar contraseña</label>
+										<input type="password" class="form-control" id="password2" placeholder="Confirm Password">
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1">Descripción</label>
+										<textarea class="form-control" id="description1" rows="3"></textarea>
+									</div>
+									<hr>
+									<button type="cancel" class="btn btn-secondary">Cancelar</button>
+									<button type="submit" class="btn btn-primary">Guardar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 
-									<div class="container">
-										<div class="card">
-											<div class="content">
-												<div class="contentBx">
-													<h3>LAPTOP LENOVO<br><span>PRODUCTO USADO</span></h3>
-												</div>
-												<div class="imgBx">
-													<img src="img/productos/pc.jpg">
-												</div>
-												<div class="contentBx">
-													<h3>MeliPa12<br><span>8394702020</span></h3>
-												</div>
-											</div>
-											<ul class="sci">
-												<li>
-													<a href="">ACEPTAR</a>
-												</li>
-												<li>
-													<a href="">RECHAZAR</a>
-												</li>
-											</ul>
-										</div>
-										<div class="card">
-											<div class="content">
-												<div class="contentBx">
-													<h3>MEMORIA USB 512GB<br><span>PRODUCTO USADO</span></h3>
-												</div>
-												<div class="imgBx">
-													<img src="img/productos/usb.jpg">
-												</div>
-												<div class="contentBx">
-													<h3>DrMario11<br><span>647289394</span></h3>
-												</div>
-											</div>
-											<ul class="sci">
-												<li>
-													<a href="">ACEPTAR</a>
-												</li>
-												<li>
-													<a href="">RECHAZAR</a>
-												</li>
-											</ul>
-										</div>
-										<div class="card">
-											<div class="content">
-												<div class="contentBx">
-													<h3>DIADEMA DE GATO<br><span>PRODUCTO NUEVO</span></h3>
-												</div>
-												<div class="imgBx">
-													<img src="img/productos/diadema.jpg">
-												</div>
-												<div class="contentBx">
-													<h3>Paola55<br><span>928942008</span></h3>
-												</div>
-											</div>
-											<ul class="sci">
-												<li>
-													<a href="">ACEPTAR</a>
-												</li>
-												<li>
-													<a href="">RECHAZAR</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-	
-		</section>
-
-		<script src="/js/script.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/form.js"></script>
 </body>
 
 </html>
