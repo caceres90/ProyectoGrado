@@ -53,8 +53,9 @@ header .logo{
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: rgba(3, 18, 37, 0.987);
+    color: rgba(255, 255, 255, 0.987);
     font-size: 1.6em;
+    height: 100px;
 }
 
 header .container{
