@@ -19,7 +19,7 @@ function isValid(e){
     if (password1 == password2){
     password = password1;
     console.log(password1);
-    console.log(password2);
+    console.log(password2)
     }else{
       prompt("La contraseña no coincide");
     }
